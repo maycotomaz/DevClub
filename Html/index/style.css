@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+a{
+    color: blue;
+}
+a::before{
+    content: "aqui ";
+}
+a::after{
+    content: " do lado ";
+}
+a:active{
+    color: red;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+input:checked{
+    width: 100px;
+    height: 100px;
+  
+}
+input:disabled{
+    width: 100px;
+    height: 100px;
+}
+input:focus{
+    border: 1px solid blue;
+    outline: none;
+}
+.container:empty{
+    background: blue;
+}
+
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: blueviolet;
+}/*
+span:first-of-type{
+    color: red;
+}
+span:last-of-type{
+    color: brown;
+}
+p:first-of-type{
+    color: blue;
+}*/
+.caixa :not(p) {
+    color: red;
+}
+li:nth-child(2){
+    color: aqua;
+}
+li:nth-last-child(2){
+    color: aquamarine;
+}
+
