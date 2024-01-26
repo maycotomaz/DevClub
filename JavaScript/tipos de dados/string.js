@@ -1,0 +1,1 @@
+var MyFistString = "minha string"
