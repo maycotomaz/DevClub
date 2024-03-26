@@ -30,4 +30,4 @@ const calc = (number1, number2, oparation) => {
     return result
 }
 
-console.log(calc(2,4,"8"))
+console.log(calc(2,4,"*"))
