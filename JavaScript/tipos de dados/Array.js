@@ -40,6 +40,32 @@ const Nunbers = [10, 5 , 100, 12]
 }
 
 ]
-console.log(Nunbers)
 
-console.log(People)
+const students = [ "mayco", "maria", "joao", "cleitonrasta", "marcos"]
+
+/*students.push("vitoria") adiciona no meu array
+students.push("marcos")
+
+console.log(students.length)meedi o tamnho do array
+
+students.sort() organiza por ondem alfalbetica
+
+delete students[0] deleta a posiçao do array deixa vazio
+
+students.splice(1,1) ele pertimite que tire  e coloque itens exatamente na posiçao que eu quero
+students.splice(0,1) vai tirar o o elemento que selecionei
+students.splice(1,0, "pedro") vai adicionar sem retirar nenhum
+students.splice(1,1, "pedro") vai substituir oq selecionado no array, posso tirar mais de um
+
+slice permite que tiri itens do array
+const  newstudents = students.slice(1,2) o selecionado vai ficar 
+
+pop   students.pop() vai tirar o ultimo iten do array
+shift tirar o ultimo iten do array
+*/
+students.sort()
+
+
+
+
+console.log(students)
