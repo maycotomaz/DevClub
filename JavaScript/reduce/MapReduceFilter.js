@@ -1,6 +1,9 @@
 
 
 
+const list = [20,3,234,12,17,541,6,87,275,1000]
+
+    
 
 const Companies = [
     {name:"Samsung",MarketValue: 50, CEO: "Kim Hyun Suk", FoundedOn: 1938},
@@ -10,11 +13,19 @@ const Companies = [
     {name:"Spotify",MarketValue: 30, CEO: "Daniel Ek", FoundedOn: 2006},
     {name:"Apple",MarketValue: 845, CEO: "Tim Cook", FoundedOn: 1976}
 ]
+const Add10PorcentMarkValue =  value =>{
+    
+    value.MarketValue = value.MarketValue + value.MarketValue / 10
+    return value
+    
+}
+const YearsFounder =  empresas => empresas.FoundedOn < 2000
+    
 
-const NewCompanies = Companies.filter( client =>{
-   // return client.FoundedOn > 1975 && client.MarketValue > 200
-   if(client.FoundedOn <= 1975 ) return false
-   if(client.MarketValue <= 200) return false
-   else return true
-})
+let AllOldCompaniesMarketValue =  (acc,current) => current.MarketValue + acc;
+
+
+
+const NewCompanies = Companies.map( Add10PorcentMarkValue).filter(YearsFounder).reduce(AllOldCompaniesMarketValue,0)
 console.log(NewCompanies)
+
