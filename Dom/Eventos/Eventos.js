@@ -1,8 +1,8 @@
 
-const element = document.querySelector("button")
+const element = document.querySelector("input")
 
-element.onclick = () => {
-    alert("fui pressionado")
+element.onkeypress = (event) => {
+   console.log(event)
 } 
     
 
