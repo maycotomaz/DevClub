@@ -21,13 +21,13 @@
                 Converter <span>de</span>
                 <select>
                     <option>
-                        R$ Real brasileiro
+                        R$ Real Brasileiro
                     </option>
                 </select>
             </label>
             <label class="Dolar">
                 Converter <span>Para</span>
-                <select>
+                <select id="Selet-Currency">
                     <option>
                         US$ Dólar americano
                     </option>
@@ -42,23 +42,23 @@
 
             <label>
                <span> Valor</span>
-                <input type="number" id="input-real" placeholder="R$ 10.000,00" autocomplete="none">
+                <input type="number" id="input-real" placeholder="R$ 10.000,00" autocomplete="none"  >
             </label>
-
+        
             <button id="convert-button" type="button">Converter</button>
             <section>
                 <div class="containers">
                     <img src="./image/brasil 2.svg" alt="bandeira-brasileira" />
                     <p class="currents">Real</p>
-                    <p class="currents-color">R$ 10.000,00</p>
+                    <p class="currents-color" id="value-real">R$ 10.000,00</p>
                 </div>
-
+                
                 <img class="arrow-img" src="./image/Vector.png" alt="seta" />
 
                 <div class="containers">
-                    <img src="./image/estados-unidos (1) 1.svg" alt="bandeira-Pais-conversao" />
-                    <p class="currents">Dólar Americano</p>
-                    <p class="currents-color">US$ 2.000,00</p>
+                    <img id="img-currency" src="./image/estado-unidos.svg" alt="bandeira-Pais-conversao" />
+                    <p class="currents" id="currency-Name">Dólar Americano</p>
+                    <p class="currents-color" id="currency-Value">US$ 2.000,00</p>
                 </div>
 
             </section>
